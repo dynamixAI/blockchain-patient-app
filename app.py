@@ -10,7 +10,7 @@ from web3.exceptions import ContractLogicError
 INFURA_URL = "https://sepolia.infura.io/v3/fe337c3c7ea047bdbf304ead0a2217d9"  
 web3 = Web3(Web3.HTTPProvider(INFURA_URL))
 
-# Smart contract address (your deployed contract on Sepolia)
+# Smart contract address on Sepolia
 CONTRACT_ADDRESS = "0x85F7e48E87A2Cb8a0ef213e98561ceeA0E6faCE8"
 
 # Smart contract ABI 
