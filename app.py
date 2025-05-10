@@ -248,7 +248,7 @@ with st.form("add_form"):
 
                 # Sign and send
                 signed_txn = web3.eth.account.sign_transaction(txn, private_key)
-                tx_hash = web3.eth.send_raw_transaction(signed_txn.raw_transaction)
+		tx_hash = web3.eth.send_raw_transaction(signed_tx.rawTransaction)
                 st.success("✅ Record submitted successfully!")
                 st.markdown(f"🔗 [View on Sepolia Etherscan](https://sepolia.etherscan.io/tx/{tx_hash.hex()})")
             except ContractLogicError as e:
